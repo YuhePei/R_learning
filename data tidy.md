@@ -1,4 +1,5 @@
 ##R中常见的好的代码
+
 add labels
 ```
 library(tidyverse)
@@ -10,7 +11,7 @@ ggplot(data4)+
             stat="count",binwidth=0.3,position="dodge")
 count(data4$Survived)
 ```
-fill NA data
+fill *NA* data
 ``` 
 data10 <- select(data,Survived,Cabin)
 data10$Cabin[data10$Cabin==""] <- "0"             //填充空白数据
